@@ -101,20 +101,6 @@ function App() {
         {favorites.map((monster) => (
           <li key={monster.index}>
             <h3>{monster.name}</h3>
-            {monster.damage_types && (
-              <p>Damage Types: {monster.damage_types.join(", ")}</p>
-            )}
-            {monster.skills && (
-              <p>
-                Skills: {monster.skills.map((skill) => skill.name).join(", ")}
-              </p>
-            )}
-            {monster.classes && (
-              <p>
-                Classes:{" "}
-                {monster.classes.map((classItem) => classItem.name).join(", ")}
-              </p>
-            )}
           </li>
         ))}
       </ul>
